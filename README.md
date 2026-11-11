@@ -253,8 +253,3 @@ CustomerOps AI adheres strictly to enterprise trust principles:
 1. **Monetary Boundary Check:** Any automated refund request strictly exceeding **$50.00 USD** is flagged and suspended into `PENDING_APPROVAL` status. The workflow notifies the customer and transfers execution state to the supervisor queue.
 2. **Deterministic CRM Auditing:** Every tool invocation, refund sign-off, or order cancellation logs an immutable record in `AuditLog` with precise timestamps and reviewer identity.
 3. **Graceful Cancellation Validation:** Attempted cancellations for packages already marked `Delivered` or `In Transit` are automatically intercepted with policy guidance.
-
----
-
-## License
-This project is open-source under the [MIT License](LICENSE).
