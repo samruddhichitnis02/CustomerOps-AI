@@ -3,17 +3,6 @@
 # CustomerOps AI: Enterprise Customer Service Agent
 
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Intent%20Routing%20Accuracy-90.0%25%20(Target%2088%25)-success?style=flat-square" alt="Intent Accuracy" />
-  <img src="https://img.shields.io/badge/Task%20Completion%20Rate-100%25%20(Target%2085%25)-success?style=flat-square" alt="Task Completion" />
-  <img src="https://img.shields.io/badge/Non--LLM%20p95%20Latency-8.9%20ms%20(Target%20%3C500ms)-success?style=flat-square" alt="Latency SLO" />
-  <img src="https://img.shields.io/badge/Safety%20Guard-HITL%20Active-blue?style=flat-square" alt="HITL" />
-</p>
-
-</div>
-
----
-
 ## Overview
 
 **CustomerOps AI** is an enterprise-scale customer service agent application built to eliminate repetitive manual handling across account, order, refund, and cancellation requests. 
