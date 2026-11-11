@@ -2,8 +2,6 @@
 
 # CustomerOps AI: Enterprise Customer Service Agent
 
-### *Agentforce-Inspired Agentic CRM Orchestrator Powered by LangGraph, Salesforce API & Human-in-the-Loop Safety Gates*
-
 [![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing-brightgreen?logo=githubactions&style=for-the-badge)](https://github.com/)
 [![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-FF6F00?logo=python&style=for-the-badge)](https://github.com/langchain-ai/langgraph)
 [![Salesforce CRM](https://img.shields.io/badge/CRM%20API-Salesforce%20REST-00A1E0?logo=salesforce&style=for-the-badge)](https://developer.salesforce.com/)
