@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "query": "Can you check the delivery tracking status for order ORD-84920?",
+    "category": "order",
+    "expected_intent": "order_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 2,
+    "query": "Where is my package? The order number is ORD-38104.",
+    "category": "order",
+    "expected_intent": "order_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 3,
+    "query": "I want to track order ORD-10928 shipped to Springfield.",
+    "category": "order",
+    "expected_intent": "order_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 4,
+    "query": "Has order ORD-84920 been dispatched yet?",
+    "category": "order",
+    "expected_intent": "order_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 5,
+    "query": "I received broken headphones for order ORD-84920, I need a refund of $149.99.",
+    "category": "refund",
+    "expected_intent": "refund_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 6,
+    "query": "Please reimburse me for order ORD-38104, requesting refund of $45.",
+    "category": "refund",
+    "expected_intent": "refund_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 7,
+    "query": "I would like to return the items in order ORD-10928 for money back.",
+    "category": "refund",
+    "expected_intent": "refund_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 8,
+    "query": "The product is defective, please issue a refund of $149 for ORD-84920.",
+    "category": "refund",
+    "expected_intent": "refund_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 9,
+    "query": "Please cancel my order ORD-55201 immediately.",
+    "category": "cancellation",
+    "expected_intent": "cancellation_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 10,
+    "query": "I want to cancel the processing order ORD-84920.",
+    "category": "cancellation",
+    "expected_intent": "cancellation_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 11,
+    "query": "I made a mistake in my purchase, stop and void order ORD-55201.",
+    "category": "cancellation",
+    "expected_intent": "cancellation_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 12,
+    "query": "Can I cancel order ORD-38104 please?",
+    "category": "cancellation",
+    "expected_intent": "cancellation_request",
+    "expected_task_success": true
+  },
+  {
+    "id": 13,
+    "query": "What is my account membership tier and registered email?",
+    "category": "account",
+    "expected_intent": "account_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 14,
+    "query": "Can you show my profile details and saved shipping address?",
+    "category": "account",
+    "expected_intent": "account_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 15,
+    "query": "I need to check my account tier status in Salesforce.",
+    "category": "account",
+    "expected_intent": "account_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 16,
+    "query": "What is your standard return policy for enterprise customers?",
+    "category": "faq",
+    "expected_intent": "general_faq",
+    "expected_task_success": true
+  },
+  {
+    "id": 17,
+    "query": "Hello, what are your customer support operating hours?",
+    "category": "faq",
+    "expected_intent": "general_faq",
+    "expected_task_success": true
+  },
+  {
+    "id": 18,
+    "query": "Hi there, thank you for the help!",
+    "category": "faq",
+    "expected_intent": "general_faq",
+    "expected_task_success": true
+  },
+  {
+    "id": 19,
+    "query": "Can I get an update on order ORD-84920 tracking number?",
+    "category": "order",
+    "expected_intent": "order_inquiry",
+    "expected_task_success": true
+  },
+  {
+    "id": 20,
+    "query": "Need to initiate a return and refund for ORD-84920.",
+    "category": "refund",
+    "expected_intent": "refund_request",
+    "expected_task_success": true
+  }
+]
+
