@@ -1,7 +1,40 @@
-<div align="center">
-
 # CustomerOps AI: Enterprise Customer Service Agent
 
+*Agentforce-Inspired Agentic CRM Orchestrator Powered by LangGraph, Salesforce API & Human-in-the-Loop Safety Gates*
+
+[![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing-brightgreen?logo=githubactions&style=for-the-badge)](https://github.com/)
+[![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-FF6F00?logo=python&style=for-the-badge)](https://github.com/langchain-ai/langgraph)
+[![Salesforce CRM](https://img.shields.io/badge/CRM%20API-Salesforce%20REST-00A1E0?logo=salesforce&style=for-the-badge)](https://developer.salesforce.com/)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&style=for-the-badge)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-61DAFB?logo=react&style=for-the-badge)](https://react.dev/)
+[![Docker](https://img.shields.io/badge/Deployment-Docker%20Compose-2496ED?logo=docker&style=for-the-badge)](https://www.docker.com/)
+
+---
+
+## Live Workflow Demonstration
+
+![CustomerOps AI Live Workflow](docs/assets/workflow-demo.svg)
+
+---
+
+## How It Works in Simple Terms
+
+CustomerOps AI replaces slow, manual customer support tickets with an autonomous AI agent connected directly to enterprise Salesforce CRM records:
+
+1. **Step 1: Customer Makes a Request**  
+   A customer types a natural message into the support portal (e.g., *"Where is my package for order ORD-84920?"* or *"My headphones arrived defective, please refund $149.99"*).
+
+2. **Step 2: AI Agent Identifies Intent & Queries Salesforce**  
+   The LangGraph engine analyzes the message, determines what the customer needs (e.g., order tracking vs. refund request), and queries Salesforce CRM to pull their account profile, order history, and shipment details.
+
+3. **Step 3: Enterprise Safety Check (Human-in-the-Loop)**  
+   * **Low-risk actions** (checking tracking numbers, updating email addresses, or refunds under $50) are completed automatically within milliseconds.
+   * **High-risk actions** (refunds over $50.00 or order cancellations) trip a safety rule. The agent pauses the action and places it into the **Supervisor Approval Queue**.
+
+4. **Step 4: Resolution & CRM Sync**  
+   Once approved by a human supervisor with a single click in the Operations Console, the refund is executed in Salesforce, an audit record is saved, and the customer receives instant confirmation.
+
+---
 
 ## Overview
 
@@ -169,6 +202,9 @@ CustomerOps-AI/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml             # Automated CI/CD (Pytest, Build & Eval)
+├── docs/
+│   └── assets/
+│       └── workflow-demo.svg  # Animated workflow diagram
 ├── backend/
 │   ├── app/
 │   │   ├── agent/
@@ -218,4 +254,7 @@ CustomerOps AI adheres strictly to enterprise trust principles:
 2. **Deterministic CRM Auditing:** Every tool invocation, refund sign-off, or order cancellation logs an immutable record in `AuditLog` with precise timestamps and reviewer identity.
 3. **Graceful Cancellation Validation:** Attempted cancellations for packages already marked `Delivered` or `In Transit` are automatically intercepted with policy guidance.
 
+---
 
+## License
+This project is open-source under the [MIT License](LICENSE).

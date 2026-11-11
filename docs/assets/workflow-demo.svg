@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+
+      .bg { fill: #0b1120; rx: 16px; }
+      .card { fill: #131d33; stroke: #1e293b; stroke-width: 1.5; rx: 12px; }
+      .header-bar { fill: #0f172a; rx: 16px 16px 0 0; }
+      .dot { rx: 50%; }
+      .text-title { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 700; fill: #f8fafc; }
+      .text-sub { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 11px; fill: #94a3b8; }
+      .text-code { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #cbd5e1; }
+      .text-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; }
+      .arrow { stroke: #334155; stroke-width: 2; stroke-dasharray: 4 4; fill: none; }
+
+      /* Animation Sequences (12s infinite loop) */
+      @keyframes pulseStep1 {
+        0%, 100% { opacity: 0.3; transform: scale(0.98); }
+        5%, 25% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.4)); }
+        30% { opacity: 0.5; transform: scale(0.98); }
+      }
+      @keyframes pulseStep2 {
+        0%, 20% { opacity: 0.3; transform: scale(0.98); }
+        25%, 50% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.4)); }
+        55% { opacity: 0.5; transform: scale(0.98); }
+        100% { opacity: 0.3; }
+      }
+      @keyframes pulseStep3 {
+        0%, 45% { opacity: 0.3; transform: scale(0.98); }
+        50%, 75% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.5)); }
+        80% { opacity: 0.5; transform: scale(0.98); }
+        100% { opacity: 0.3; }
+      }
+      @keyframes pulseStep4 {
+        0%, 70% { opacity: 0.3; transform: scale(0.98); }
+        75%, 95% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.5)); }
+        100% { opacity: 0.3; }
+      }
+
+      @keyframes flowLine {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      .step-1 { animation: pulseStep1 10s infinite ease-in-out; transform-origin: 125px 120px; }
+      .step-2 { animation: pulseStep2 10s infinite ease-in-out; transform-origin: 325px 120px; }
+      .step-3 { animation: pulseStep3 10s infinite ease-in-out; transform-origin: 525px 120px; }
+      .step-4 { animation: pulseStep4 10s infinite ease-in-out; transform-origin: 725px 120px; }
+      .flow-path { stroke: #38bdf8; stroke-width: 2; stroke-dasharray: 6 4; fill: none; animation: flowLine 1.5s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="850" height="420" class="bg" />
+
+  <!-- Window Header -->
+  <rect width="850" height="44" class="header-bar" />
+  <circle cx="24" cy="22" r="6" fill="#ef4444" />
+  <circle cx="44" cy="22" r="6" fill="#f59e0b" />
+  <circle cx="64" cy="22" r="6" fill="#10b981" />
+  <text x="90" y="27" class="text-title">CustomerOps AI — Automated Multi-Step Request Lifecycle</text>
+  <text x="680" y="26" class="text-tag" fill="#38bdf8">AGENTFORCE WORKFLOW</text>
+
+  <!-- Flow Connector Lines -->
+  <path d="M 205 170 L 245 170" class="flow-path" />
+  <path d="M 405 170 L 445 170" class="flow-path" />
+  <path d="M 605 170 L 645 170" class="flow-path" />
+
+  <!-- STEP 1: Customer Interaction -->
+  <g class="step-1">
+    <rect x="35" y="75" width="170" height="200" class="card" stroke="#38bdf8" />
+    <rect x="47" y="90" width="85" height="20" rx="4" fill="#0369a1" />
+    <text x="54" y="104" class="text-tag" fill="#e0f2fe">STEP 1: INCOMING</text>
+    <text x="47" y="132" class="text-title" font-size="12px">Customer Inquiry</text>
+    <rect x="47" y="145" width="146" height="55" rx="6" fill="#0f172a" stroke="#1e293b" />
+    <text x="55" y="163" class="text-code" font-size="9px" fill="#93c5fd">"Defective item</text>
+    <text x="55" y="177" class="text-code" font-size="9px" fill="#93c5fd">in ORD-84920.</text>
+    <text x="55" y="191" class="text-code" font-size="9px" fill="#38bdf8">Refund $149.99"</text>
+    <text x="47" y="222" class="text-sub">Account: Alex Chen</text>
+    <text x="47" y="238" class="text-sub">Tier: Platinum</text>
+    <text x="47" y="258" class="text-tag" fill="#38bdf8">Channel: React Portal</text>
+  </g>
+
+  <!-- STEP 2: LangGraph Orchestration & CRM Retrieval -->
+  <g class="step-2">
+    <rect x="235" y="75" width="170" height="200" class="card" stroke="#6366f1" />
+    <rect x="247" y="90" width="95" height="20" rx="4" fill="#3730a3" />
+    <text x="254" y="104" class="text-tag" fill="#e0e7ff">STEP 2: AGENTIC</text>
+    <text x="247" y="132" class="text-title" font-size="12px">LangGraph Engine</text>
+    <rect x="247" y="145" width="146" height="55" rx="6" fill="#0f172a" stroke="#1e293b" />
+    <text x="255" y="163" class="text-code" font-size="9px" fill="#a5b4fc">Intent: refund_req</text>
+    <text x="255" y="177" class="text-code" font-size="9px" fill="#a5b4fc">Confidence: 94.0%</text>
+    <text x="255" y="191" class="text-code" font-size="9px" fill="#818cf8">Tool: SF_queryOrder</text>
+    <text x="247" y="222" class="text-sub">Order Found: ORD-84920</text>
+    <text x="247" y="238" class="text-sub">Amount: $149.99</text>
+    <text x="247" y="258" class="text-tag" fill="#818cf8">Latency: 4.2 ms</text>
+  </g>
+
+  <!-- STEP 3: Enterprise Safety Gate (HITL) -->
+  <g class="step-3">
+    <rect x="435" y="75" width="170" height="200" class="card" stroke="#f59e0b" />
+    <rect x="447" y="90" width="95" height="20" rx="4" fill="#78350f" />
+    <text x="454" y="104" class="text-tag" fill="#fef3c7">STEP 3: SAFETY</text>
+    <text x="447" y="132" class="text-title" font-size="12px">HITL Approval Gate</text>
+    <rect x="447" y="145" width="146" height="55" rx="6" fill="#0f172a" stroke="#1e293b" />
+    <text x="455" y="163" class="text-code" font-size="9px" fill="#fbbf24">Rule: $149.99 &gt; $50</text>
+    <text x="455" y="177" class="text-code" font-size="9px" fill="#f59e0b">Status: INTERRUPTED</text>
+    <text x="455" y="191" class="text-code" font-size="9px" fill="#fde68a">Ref: #REF-1</text>
+    <text x="447" y="222" class="text-sub">Supervisor Review</text>
+    <text x="447" y="238" class="text-sub">Queue: Pending Sign-off</text>
+    <text x="447" y="258" class="text-tag" fill="#f59e0b">Human Oversight</text>
+  </g>
+
+  <!-- STEP 4: Execution & Resolution -->
+  <g class="step-4">
+    <rect x="635" y="75" width="170" height="200" class="card" stroke="#10b981" />
+    <rect x="647" y="90" width="105" height="20" rx="4" fill="#064e3b" />
+    <text x="654" y="104" class="text-tag" fill="#d1fae5">STEP 4: EXECUTION</text>
+    <text x="647" y="132" class="text-title" font-size="12px">Salesforce Updated</text>
+    <rect x="647" y="145" width="146" height="55" rx="6" fill="#0f172a" stroke="#1e293b" />
+    <text x="655" y="163" class="text-code" font-size="9px" fill="#6ee7b7">Action: APPROVED</text>
+    <text x="655" y="177" class="text-code" font-size="9px" fill="#6ee7b7">SF Refund Logged</text>
+    <text x="655" y="191" class="text-code" font-size="9px" fill="#34d399">Customer Notified</text>
+    <text x="647" y="222" class="text-sub">Audit Trail: Recorded</text>
+    <text x="647" y="238" class="text-sub">SLO Compliance: Met</text>
+    <text x="647" y="258" class="text-tag" fill="#10b981">P95 &lt; 500ms</text>
+  </g>
+
+  <!-- Live Terminal Log at the bottom -->
+  <rect x="35" y="295" width="770" height="100" rx="10" fill="#030712" stroke="#1e293b" />
+  <circle cx="55" cy="315" r="4" fill="#10b981" />
+  <text x="68" y="318" class="text-code" font-size="11px" fill="#10b981">LIVE AGENT ENGINE LOGS</text>
+  <text x="55" y="342" class="text-code" font-size="10.5px" fill="#94a3b8">[00:00:01] Customer request received -> session_id: 'session-active' -> Intent: refund_request (confidence: 0.94)</text>
+  <text x="55" y="360" class="text-code" font-size="10.5px" fill="#cbd5e1">[00:00:02] Salesforce CRM context retrieved -> Customer: Alex Chen (Enterprise Platinum) -> Order: ORD-84920</text>
+  <text x="55" y="378" class="text-code" font-size="10.5px" fill="#fbbf24">[00:00:03] Enterprise Safety Check triggered: $149.99 exceeds automated limit ($50.00) -> Interrupted for Supervisor</text>
+</svg>
+
