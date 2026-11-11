@@ -2,12 +2,6 @@
 
 # CustomerOps AI: Enterprise Customer Service Agent
 
-[![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing-brightgreen?logo=githubactions&style=for-the-badge)](https://github.com/)
-[![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-FF6F00?logo=python&style=for-the-badge)](https://github.com/langchain-ai/langgraph)
-[![Salesforce CRM](https://img.shields.io/badge/CRM%20API-Salesforce%20REST-00A1E0?logo=salesforce&style=for-the-badge)](https://developer.salesforce.com/)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&style=for-the-badge)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-61DAFB?logo=react&style=for-the-badge)](https://react.dev/)
-[![Docker](https://img.shields.io/badge/Deployment-Docker%20Compose-2496ED?logo=docker&style=for-the-badge)](https://www.docker.com/)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Intent%20Routing%20Accuracy-90.0%25%20(Target%2088%25)-success?style=flat-square" alt="Intent Accuracy" />
